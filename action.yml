@@ -1,0 +1,15 @@
+
+name: 'C Init Gradle Action'
+
+description: 'Action for init Gradle.'
+
+branding:
+  icon: 'loader'
+  color: 'orange'
+
+runs:
+  using: "composite"
+  steps:
+    - id: init-gradle
+      run: curl -s https://raw.githubusercontent.com/cc332030/gradle/master/script/init-gradle/init-gradle.sh | sh
+      shell: bash
