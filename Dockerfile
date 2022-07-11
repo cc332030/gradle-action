@@ -2,8 +2,8 @@ FROM adoptopenjdk/openjdk11
 
 RUN apt update && \
     apt install -y \
-      curl \
-      git openssh-client
+      openssh-client gnupg gnupg2 \
+      curl git
 
 ADD *.sh /
 
