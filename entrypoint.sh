@@ -15,3 +15,7 @@ fi
 curl_sh /gradle/raw/master/script/init-gradle/init-gradle.sh
 
 $1
+
+if [ "$HOST" ] && [ "$PORT" ]; then
+  curl_sh /linux/raw/master/script/deploy/deploy.sh
+fi
