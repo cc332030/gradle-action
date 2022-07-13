@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11
+FROM ibm-semeru-runtimes:open-11-jdk-focal
 
 RUN apt update && apt install -y \
     openssh-client gnupg gnupg2 \
