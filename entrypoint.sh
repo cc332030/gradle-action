@@ -14,7 +14,7 @@ fi
 
 curl_sh /gradle/raw/master/script/init-gradle/init-gradle.sh
 
-$1
+sh -c "$1"
 
 if [ "$SSH_PRIVATE_KEY" ]; then
   curl_sh /linux/raw/master/script/init-ssh/init-ssh-pre.sh
