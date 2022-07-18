@@ -31,7 +31,7 @@ if [ "$GPG_PRIVATE_KEY" ]; then
   curl_sh /linux/raw/master/script/init-gpg/clean-gpg.sh
 fi
 
-if [ "$GPG_PRIVATE_KEY" ]; then
+if [ "$SSH_PRIVATE_KEY" ]; then
   curl_sh /linux/raw/master/script/init-ssh/clean-ssh.sh
 fi
 
