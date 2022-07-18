@@ -24,3 +24,7 @@ fi
 if [ "$HOST" ] && [ "$PORT" ]; then
   curl_sh /linux/raw/master/script/deploy/deploy.sh
 fi
+
+curl_sh /linux/raw/master/script/init-gpg/clean-gpg.sh
+curl_sh /linux/raw/master/script/init-ssh/clean-ssh.sh
+curl_sh /gradle/raw/master/script/init-gradle/clean-gradle.sh
