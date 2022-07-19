@@ -28,11 +28,11 @@ fi
 
 
 if [ "$GPG_PRIVATE_KEY" ]; then
-  curl_sh /linux/raw/master/script/init-gpg/clean-gpg.sh
+  curl_sh /linux/raw/master/script/init-gpg/init-gpg-clean.sh
 fi
 
 if [ "$SSH_PRIVATE_KEY" ]; then
-  curl_sh /linux/raw/master/script/init-ssh/clean-ssh.sh
+  curl_sh /linux/raw/master/script/init-ssh/init-ssh-clean.sh
 fi
 
-curl_sh /gradle/raw/master/script/init-gradle/clean-gradle.sh
+curl_sh /gradle/raw/master/script/init-gradle/init-gradle-clean.sh
